@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+
+*{
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.2s ease;
+    font-family: Roboto;
+    
+}
+/*!Html Codes */ 
+html{
+    overflow-x: hidden;
+    scroll-padding-top: 90px;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: 8px;
+    background-color: white;
+
+}
+
+html::-webkit-scrollbar-tracks{
+    background-color: transparent;
+    
+}
+
+html::-webkit-scrollbar-thumb{
+    border-radius: 30px;
+    background-color: black;
+    
+}
+
+body{
+    background-color: antiquewhite;
+}
+section{
+    padding: 30px 7%;
+}
+.heading{
+    color: black;
+    font-size: 40px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid;
+
+}
+
+.btn{
+    margin-top: 10px;
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #ff6e00;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: 0.7;
+}
+
+/*!Header Start */
+
+.logo{
+    font-size: 30px;
+}
+
+.header{
+    background-color: lightskyblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    height: 90px;
+    box-shadow: 0px 0px 17px -2px rgba(0,0,0,0.75);
+}
+
+.navbar a{
+    margin: 0 10px;
+    font-size: 16px;
+    color: white;
+}
+.active{
+    background-color: #ff6e00;
+    padding: 3px 3px 5px 3px;    
+}
+.navbar a:hover{
+    background-color: #ff6e00;
+    padding: 3px 3px 5px 3px;
+    border-radius: 2px;
+}
+
+.buttons button{
+    cursor: pointer;
+    font-size: 25px;
+    margin-left: 20px;
+    background-color: transparent;
+}
+/*!Header End */
+
+/*!kampanyalar Start */
+    .kampanya{
+        display: block;
+        padding: 60px;
+    }
+
+    .kampanyalar{
+        min-height: 100vh;
+    }
+    .kampanyalar .content{
+        max-width: 60px;
+    }
+
+/*!kampanyalar End */
+
+/*!Ürünlerimiz Start */
+
+
+    .Ürünlerimiz .box-container{
+   display:grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   gap: 15px;
+    }
+    .Ürünlerimiz .box-container .box img{
+        width: 100%;
+        object-fit: cover;
+
+    }
+    .Ürünlerimiz .box-container .box{
+        padding: 30px;
+        background-color: hotpink;
+        border-radius: 30px;
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .Ürünlerimiz .box-container .box .ürün-kategori{
+        font-size: 14px;
+    }
+
+    .Ürünlerimiz .box-container .box h3{
+        font-size: 30px;
+        padding: 10px 0;
+    }
+
+    .Ürünlerimiz .box-container .box .price{
+        font-size: 25px;
+        padding: 5px 0;
+    }
+    .Ürünlerimiz .box-container .box .price span{
+        font-size: 20px;
+        text-decoration: line-through;
+    }
+
+/*!Ürünlerimiz End */
+
+/* İletişim start*/
+    .iletişim .row{
+        display: flex;
+        background-color:darkkhaki;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .iletişim .row .map{
+        flex: 1 1 450px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .iletişim .row form{
+        flex: 1 1 450px;
+        padding: 50px 20px;
+        text-align: center;
+ }
+
+ .iletişim .row form h3{
+    font-size: 35px;
+
+}
+
+.iletişim .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    border:#ff6e00
+    
+}
+
+.iletişim .row form .inputBox i{
+    color: chartreuse;
+    font-size: 20px;
+    padding-left: 20px;
+    
+}
+
+.iletişim .row form .inputBox input{
+    width: 100%;
+    padding: 20px;
+    font-size: 17px;
+    color: blue;
+    text-transform: none;
+    background-color: transparent;
+    
+}
+
+/* İletişim end*/
+
+/* Hakkımızda start*/
+
+/*Hakkımızda end*/
