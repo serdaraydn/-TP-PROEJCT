@@ -49,6 +49,13 @@ section{
     border-bottom: 1px solid;
 
 }
+.search-input{
+    font-size: 16px;
+    color: black;
+    padding: 10px;
+    text-transform: none;
+    border-radius: 30px;
+}
 
 .btn{
     margin-top: 10px;
@@ -66,6 +73,37 @@ section{
 }
 
 /*!Header Start */
+
+.header .search-form{
+    position: absolute;
+    top: 15%;
+    right: 7%;
+    background-color: white;
+    width: 500px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0px 0px 25px 2px rgba(0 0 0 / 75%) ;
+    transform: scaleY(0);
+}
+
+.header .search-form.active{
+   transform: scale(1);
+ }
+
+.header .search-form i{
+   cursor: pointer;
+   font-size: 22px;
+   margin-right: 15px;
+   color: black;
+}
+
+.header .search-form input{
+    width: 100%;
+ }
+
+
 
 .logo{
     font-size: 30px;
@@ -102,6 +140,135 @@ section{
     margin-left: 20px;
     background-color: transparent;
 }
+
+.header .cart-item-container{
+    position: absolute;
+    top: 12%;
+    height: calc(100vh-90px);
+    width: 350px;
+    background-color: white;
+    box-shadow: 0px 20px 147px 0px rgba(0 0 0/ 75%);
+    right: -100%;
+}
+
+.header .cart-item-container.active{
+    right: 30px;
+}
+
+.header .cart-item-container .cart-item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+.header .cart-item-container .cart-item:hover{
+    box-shadow: 0px 0px 10px 0px rgba(0 0 0/ 75%);
+}
+
+.header .cart-item-container .cart-item .fa-times{
+   position: absolute;
+   top: 10px;
+   right: 15px;
+   font-size: 20px;
+   cursor: pointer;
+   color: black;
+}
+
+.header .cart-item-container .cart-item img{
+    height: 70px;
+
+}
+
+.header .cart-item-container .cart-item .content h3{
+    font-size: 20px;
+    color: black;
+    padding-bottom: 5px;
+
+}
+
+.header .cart-item-container .cart-item .content .price{
+    font-size: 15px;
+    color: black;
+
+}
+
+.header .cart-item-container .btn{
+    width: 100%;
+    text-align: center;
+    border-radius: unset;
+}
+
+.header .user-sign-in{
+    display: flex;
+    position: absolute;
+    top: 12%;
+    height: calc(100vh-90px);
+    width: 700px;
+    background-color: white;
+    box-shadow: 0px 20px 147px 0px rgba(0 0 0/ 75%);
+    right: -100%;
+    gap: 15px;
+
+}
+
+.header .user-sign-in.active{
+    right: 30px;
+}
+
+.header .user-sign-in .btn{
+    width: 60%;
+    text-align: center;
+    border-radius: unset;
+}
+
+.header .user-sign-in .sign-in{
+    position: relative;
+    display: block;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    border-right: 1px solid;
+}
+
+
+
+.header .user-sign-in .sign-up{
+    position: relative;
+    display: block;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+
+.header .user-sign-in i{
+    color: black;
+    font-size: 20px;
+    padding-left: 10px;
+    
+}
+
+.header .user-sign-in input{
+    width: 70%;
+    padding: 20px;
+    margin-left: 10px;
+    font-size: 17px;
+    color: black;
+    text-transform: none;
+    background-color: transparent;
+}
+
+.header .user-sign-in .inputBox{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    border:#ff6e00
+}
+
+
+
 /*!Header End */
 
 /*!kampanyalar Start */
@@ -216,4 +383,124 @@ section{
 
 /* Hakkımızda start*/
 
+.Hakkımızda .content .yazı{
+    color: black;
+}
+
+.Hakkımızda .content .diger{
+    border-bottom: 1px solid;
+    padding-top: 15px;
+}
+
+.Hakkımızda .content .ilkbaslik{
+    border-bottom: 1px solid;
+}
+    
 /*Hakkımızda end*/
+
+/* Footer start*/
+
+    .footer{
+        background-color: black;
+        text-align: center;
+    }
+
+    .footer .search{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer .search .search-input{
+        width: 300px;
+    }
+
+    .footer .search .btn-primary{
+        background-color: red;
+        padding: 10px 20px;
+        margin-left: 10px;
+    }
+
+    .footer .share {
+        padding: 20px 0;
+
+    }
+
+    .footer .share a{
+       width: 50px;
+       height: 50px;
+       line-height: 50px;
+       color: white;
+       font-size: 20px;
+       border: yellow;
+       border-radius: 50%;
+       margin: 3px;
+
+
+    }
+
+    .footer .share a:hover{
+        background-color: red;
+ 
+     }
+
+     .footer .links{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+     }
+     
+     .footer .links a{
+        background-color: red;
+        padding: 7px 20px;
+        color: white;
+        font-size: 20px;
+        border-color: #ff6e00;
+     }
+
+     .footer .links a:hover{
+        background-color: black;
+        opacity: 0,7;
+     }
+     
+     .footer .links .active{
+        background-color: black;
+        opacity: 0,7;
+     }
+
+     .footer .credit{
+        font-size: 20px;
+        color: white;
+        font-weight: 300;
+        padding-top: 15px;
+     }
+
+     .footer .credit span{
+        color: red;
+     }
+
+/*Footer end*/
+
+/*Responsive start */
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 15px 20px;
+    }
+    .header .logo img{
+        height: 70px;
+    }
+    section{
+        padding: 20px;
+    }
+    .ürünlerimiz .box-container .box .box-head h3{
+        font-size: 34px;
+    }
+
+}
+
+@media (max-width:768px){
+    
+}

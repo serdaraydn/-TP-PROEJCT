@@ -21,15 +21,94 @@
             <a href="#">Hakkımızda</a>
         </nav>
         <div class="buttons">
-            <button> 
+            <button id="search-btn"> 
                 <i class="fas fa-search"></i> 
             </button>
-            <button> 
+            <button id="cart-btn"> 
                 <i class="fa-solid fa-bag-shopping"></i> 
             </button>
-            <button> 
+            <button id="sign-btn"> 
                 <i class="fa-solid fa-user"></i> 
             </button>
+        </div>
+        <div class="search-form">
+            <input type="text" class="search-input" id="search-box" placeholder="Ürün ara">
+            <i class="fas fa-search"></i>
+        </div>
+
+        <div class="cart-item-container">
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="ürün1" alt="ürün1">
+                <div class="content">
+                    <h3>Ürün 01</h3>
+                    <div class="price"> $25.99</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="ürün2" alt="ürün2">
+                <div class="content">
+                    <h3>Ürün 02</h3>
+                    <div class="price"> $25.99</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="ürün3" alt="ürün3">
+                <div class="content">
+                    <h3>Ürün 03</h3>
+                    <div class="price"> $25.99</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="ürün4" alt="ürün4">
+                <div class="content">
+                    <h3>Ürün 04</h3>
+                    <div class="price"> $25.99</div>
+                </div>
+            </div>
+            <a href="#" class="btn">Sepeti kontrol et</a>
+        </div>
+
+        <div class="user-sign-in">
+            <div class="sign-in">
+                <h3>Giriş yap</h3>
+                <div class="inputBox">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="E-Posta">
+                </div>
+                <div class="inputBox">
+                <i class="fas fa-eye"></i>
+                <input type="password" placeholder="Şifre">
+                
+            </div>
+            <a href="#" class="btn">Giriş Yap</a>
+            
+            </div>
+            <div class="sign-up">
+                <h3>Kayıt ol</h3>
+                <div class="inputBox">
+                    <i class="fas fa-user"></i>
+                <input type="text" placeholder="Ad-Soyad">
+                </div>
+                <div class="inputBox">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="E-Posta">
+                </div>
+                <div class="inputBox">
+                    <i class="fas fa-phone"></i>
+                <input type="tel" placeholder="Telefon Numarası">
+                </div>
+                <div class="inputBox">
+                    <i class="fas fa-eye"></i>
+                <input type="password" placeholder="Şifre">
+                
+                </div>
+                <a href="#" class="btn">Kayıt Ol</a>
+               
+            </div>
         </div>
     </header>
 <!--! Header section end-->
@@ -198,10 +277,89 @@
 <!--! İletişim section end-->
 
 <!--!Hakkımızda section start-->
+        <section class="Hakkımızda">
+            <h1 class="heading">Hakkımızda</h1>
+            <div class="content">
+                <h3 class="ilkbaslik">Hakkımızda</h3>
+                <p class="yazı"> 2023 yılında kurduğumuz marka şirketi, toptan üretim ile başladığı 
+                    girişimcilik serüvenini mağazacılık ve e-ticaret ile güçlendirmeyi başarmış, 
+                    şubeleri ile de bu serüveni en ileri boyuta taşımıştır. Sunduğumuz kullanıcı 
+                    öncelikli stratejilerimiz ve ayrıcalıklı müşteri portföyü ile değerini paha 
+                    biçilemez şekilde ikiye katlayarak, marka değerimizi hassasiyetle zirveye taşımayı 
+                    başardık. Dünya standartlarını göz önünde bulundurarak çözüm ve güven içerikli 
+                    ilkemiz ile yola çıktığımız bu serüvende; otorite rayından çıkmayarak, istikrarlı 
+                    şekilde sayısız müşteriye en iyi marka sahipliğini yapmış durumdayız.
+            </p>
+                <p class="yazı">Kuruluşundan günümüze süregelen profesyonellik, empati odaklı, 
+                    dürüstlük ve gelişime açık bakış açımız ile istikrarlı büyüme sergileyerek, 
+                    e-ticaret dünyasında saygın bir konuma yükselmeye hak kazandık.
+                </p>
+                <p class="yazı">Markamız; giysi alanında en kaliteli ürünleri, tüketiciye 
+                    en uygun fiyat ile sunma amacıyla kurulmuş olup, geride bıraktığımız 
+                    3 ay boyunca da, sektörde yaklaşımımızı aynı titizlik dâhilinde korumaya 
+                    devam etmekteyiz.</p>
+                <p class="yazı">Markamız üzerinden gerçekleştirdiğiniz tüm alışverişlerinizde; mağduriyet 
+                    içermeyen, hızlı teslimat, iptal/iade/değişim bilinci ile yaklaşımını sağlayan 
+                    müşteri temsilcilerimiz ile en keyifli alışveriş deneyimini yaşamayı mümkün kılıyoruz.</p>
+                <p class="yazı">Sektördeki son gelişmeleri ve kullanıcı alanındaki güncel talepleri 
+                    takip ederek, çağdaş düzeydeki teknolojiyle buluşturduğumuz web adresimizi 
+                    sizlere sunuyor, en iyi ekip arkadaşlarımız, güçlü ve profesyonel idari 
+                    yönetimimiz ile takibini gerçekleştirerek, tüketici haklarını en iyi şekilde 
+                    yaşamanızı elde etmenizi sağlıyoruz.
+                </p>
+                <p class="yazı">Hedefimiz; kullanıcı deneyimi ile e-ticaret camiasında 
+                    “ziyaretçi memnuniyeti en yüksek” konumuna ulaşarak, halkın takdirini kazanmak 
+                    ve sitemizden sorunsuz, mutlu tüketici konumunda ayrılmanızı sağlamak.
+                </p>
+                <p class="yazı">Örnek nitelikle misyonunu genişleterek, projelerini hayata geçirmeye 
+                    devam eden markamız, standartların üstünde kaliteyle öncülük ederek, birçok memnuniyet 
+                    beraberinde başarılı işlere imzasını atarak başarısına başarı katacak, güçlü kadro 
+                    dâhilinde sorun odaklı çalışma prensibi ile organizasyonel şekilde sizin memnuniyetinizi 
+                    sağlamaya devam edecektir.</p>
+                <h3 class="diger">İletişim Bilgilerimiz</h3>
+                <p class="yazı"> Müşteri hizmetleri numarası: 0212 648 34 34 </p>
+            <p class="yazı">     Whatsapp iletişim hattı : 0539 934 31 39</p>
+            <h3 class="diger">Çalışma Saatlerimiz</h3>
+            <p class="yazı"> Hafta içi: 09.00 - 19.00 </p>
+            <p class="yazı"> Cumartesi: 09.00 - 15.00 </p>
+            <p class="yazı"> Pazar günü hizmet vermemekteyiz. </p>
+        </div>
+        </section>
 
 
+<!--!Hakkımızda section end-->
 
-<!--!Hakkımızda section start-->
+<!--!Footer section start-->
+        <section class="footer">
+            <div class="search">
+                <input type="text"
+                class="search-input" placeholder="Ara">
+                <button class="btn btn-primary">search</button>
+            </div>
+            <div class="share">
+                <a href="#" class="fab fa-facebook"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-whatsapp"></a>
+                <a href="#" class="fab fa-telegram"></a>
+                </div>
+                
+                <div class="links">
+                    <a href="#">Kampanyalar</a>
+            <a href="#">Ürünlerimiz</a>
+            <a href="#">İletişim</a>
+            <a href="#"  class="active">Hakkımızda</a>
+                </div>
+
+                <div class="credit"> 
+                    created by <span> Enes Kapsızlar </span> | Tüm hakları saklıdır.
+                </div>
+        </section>
+
+<!--!Footer section end-->
+
+        <script src="script.js"></script>
+
 
 </body>
 </html>
