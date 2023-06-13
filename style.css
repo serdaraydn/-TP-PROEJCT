@@ -37,7 +37,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-    background-color: antiquewhite;
+    background-color: rgb(246, 240, 240);
 }
 section{
     padding: 30px 7%;
@@ -107,10 +107,14 @@ section{
 
 .logo{
     font-size: 30px;
+    color: white;
+}
+.logo span{
+    color: red;
 }
 
 .header{
-    background-color: lightskyblue;
+    background-color: rgb(54, 53, 53);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -121,15 +125,15 @@ section{
 
 .navbar a{
     margin: 0 10px;
-    font-size: 16px;
+    font-size: 20px;
     color: white;
 }
 .active{
-    background-color: #ff6e00;
+    border-bottom: 1px solid;
     padding: 3px 3px 5px 3px;    
 }
 .navbar a:hover{
-    background-color: #ff6e00;
+    border-bottom: 1px solid;
     padding: 3px 3px 5px 3px;
     border-radius: 2px;
 }
@@ -139,6 +143,7 @@ section{
     font-size: 25px;
     margin-left: 20px;
     background-color: transparent;
+    color: rgb(246, 240, 240);
 }
 
 .header .cart-item-container{
@@ -149,6 +154,7 @@ section{
     background-color: white;
     box-shadow: 0px 20px 147px 0px rgba(0 0 0/ 75%);
     right: -100%;
+    z-index: 1000;
 }
 
 .header .cart-item-container.active{
@@ -215,12 +221,13 @@ section{
 
 .header .user-sign-in.active{
     right: 30px;
+    position: absolute;
+    z-index: 1000;
 }
 
 .header .user-sign-in .btn{
     width: 60%;
     text-align: center;
-    border-radius: unset;
 }
 
 .header .user-sign-in .sign-in{
@@ -272,18 +279,76 @@ section{
 /*!Header End */
 
 /*!kampanyalar Start */
-    .kampanya{
-        display: block;
-        padding: 60px;
-    }
 
-    .kampanyalar{
-        min-height: 100vh;
-    }
-    .kampanyalar .content{
-        max-width: 60px;
-    }
+.sayfa{
+    width: 900px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 25px 2px rgba(0 0 0 / 75%) ;
+    border-radius: 20px;
+}
 
+.sliderKonum{
+    position: relative;
+    width: 900px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.img-bir{left: 0px;}
+.img-iki{left: 900px;}
+.img-uc{left: 1800px;}
+
+.sliderKonum > .slider{
+    position: absolute;
+    left:0px;
+    width: 3600px;
+    height: 500px;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-name: sliders;
+    -webkit-animation-iteration-count:infinite;
+    -moz-animation-duration: 10s;
+    -moz-animation-name: sliders;
+    -moz-animation-iteration-count:infinite;
+    -ms-animation-duration: 10s;
+    -ms-animation-name: sliders;
+    -ms-animation-iteration-count:infinite;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+  }
+
+  @-webkit-keyframes sliders{
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left:-900px;}
+    30% {left:-900px;}
+    40% {left:-1800px;}
+    50% {left:-1800px;}
+  }
+  @-moz-keyframes sliders{
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left:-900px;}
+    30% {left:-900px;}
+    40% {left:-1800px;}
+    50% {left:-1800px;}
+  }
+  @-ms-keyframes sliders {
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left:-900px;}
+    30% {left:-900px;}
+    40% {left:-1800px;}
+    50% {left:-1800px;}
+  }
+  @keyframes sliders{
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left:-900px;}
+    30% {left:-900px;}
+    40% {left:-1800px;}
+    50% {left:-1800px;}
+  }
 /*!kampanyalar End */
 
 /*!Ürünlerimiz Start */
@@ -297,11 +362,15 @@ section{
     .Ürünlerimiz .box-container .box img{
         width: 100%;
         object-fit: cover;
+    }
+
+    .Ürünlerimiz .box-container .box img:hover{
+        transform: scale(1.15,1.15);
 
     }
     .Ürünlerimiz .box-container .box{
         padding: 30px;
-        background-color: hotpink;
+        background-color: rgb(206, 197, 197);
         border-radius: 30px;
         min-height: 400px;
         display: flex;
@@ -327,13 +396,14 @@ section{
         font-size: 20px;
         text-decoration: line-through;
     }
+    
 
 /*!Ürünlerimiz End */
 
 /* İletişim start*/
     .iletişim .row{
         display: flex;
-        background-color:darkkhaki;
+        background-color: rgb(206, 197, 197);;
         flex-wrap: wrap;
         gap: 15px;
     }
@@ -358,12 +428,11 @@ section{
     display: flex;
     align-items: center;
     margin: 20px 0;
-    border:#ff6e00
     
 }
 
 .iletişim .row form .inputBox i{
-    color: chartreuse;
+    color: black;
     font-size: 20px;
     padding-left: 20px;
     
@@ -371,11 +440,15 @@ section{
 
 .iletişim .row form .inputBox input{
     width: 100%;
-    padding: 20px;
+    margin-left: 10px;
+    padding: 15px;
     font-size: 17px;
-    color: blue;
-    text-transform: none;
-    background-color: transparent;
+    background-color: rgb(246, 240, 240);
+    border-color: black;
+    border: 1px solid;
+    border-color: white;
+    border-radius: 20px;
+
     
 }
 
@@ -456,6 +529,7 @@ section{
         color: white;
         font-size: 20px;
         border-color: #ff6e00;
+        border-radius: 20px;
      }
 
      .footer .links a:hover{
